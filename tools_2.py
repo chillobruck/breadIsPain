@@ -42,4 +42,6 @@ def make_groups_for_month(date=datetime.now().date(), duty_count_for_one=3, nbr_
     pprint.pprint(duties_list)
 
 
-make_groups_for_month()
+date = datetime.strptime('01.01.2022', '%d.%m.%Y')
+
+make_groups_for_month(date)
